@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.awt.*;
 import java.util.List;
-import javax.swing.*;
 public class Pic {
     static int goalCatchNumber = 0;
     static int countScore = 0;
@@ -102,9 +101,7 @@ public class Pic {
     //true timeover  false timeremind
     boolean gameTime(){//获取计时时间
         long tim = (endTime.getTime() - startTime.getTime())/1000;
-        if(tim > 20){
-            return true;
-        }
+        if(tim > 20){return true;}
         return false;
     }
     void rePic(){//初始化游戏数据
